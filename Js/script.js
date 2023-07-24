@@ -11,4 +11,4 @@ const enviarDadosHome = document.querySelector("#btn-submit")
 
 enviarDadosHome.addEventListener("click", () => {
     const dados = coletaDadosHome()
-})
+});
