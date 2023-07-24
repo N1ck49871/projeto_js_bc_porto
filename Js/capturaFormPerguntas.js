@@ -1,5 +1,7 @@
 import { quiz1 } from "./quiz1.js";
-
+const temas = [
+    quiz1
+]
 function exibePerguntas(quests) {
     const questao = document.querySelector("#perguntas"); // Usando querySelector em vez de querySelectorAll
     questao.innerHTML = "";
@@ -19,28 +21,7 @@ function exibePerguntas(quests) {
             <input type="radio" name="resposta" value="4" required />
             <label for="resposta">D) ${quiz.r4}</label>
         `;
-    }
-}
+    };
+};
 
-exibePerguntas(quiz1);
-
-
-
-// function alteraCamposQuiz() {
-//     const perg = document.querySelector("#pergunta");
-//     let pergunta = perg.innerText = "Teste";
-//     console.log(pergunta);
-// }
-
-// function coletaDadosHome() {
-//     const nome = document.querySelector("#nome").value;
-//     const tema = document.querySelector("#tema").value;
-//     const dados = {nome, tema};
-//     return dados;
-// }
-
-// const enviarDadosHome = document.querySelector("#btn-submit");
-
-// enviarDadosHome.addEventListener("click", ()=>{
-//     const dados = (coletaDadosHome());
-// });
+exibePerguntas(temas[0]);
