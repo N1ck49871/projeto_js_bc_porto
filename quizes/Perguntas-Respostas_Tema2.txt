@@ -1,0 +1,113 @@
+Pergunta 1:
+Um grupo de 10 pessoas está sentado em uma mesa redonda. João está exatamente à frente de Maria, que está à direita de Ana. Quem está à direita de João?
+
+a) Carlos
+b) Pedro
+c) Luísa
+d) Marta
+e) Lucas
+
+Resposta: c) Luísa
+
+Pergunta 2:
+Um agricultor tinha 17 ovelhas, todas morreram, exceto 9. Quantas ovelhas ele tem agora?
+
+a) 9 ovelhas
+b) 8 ovelhas
+c) 26 ovelhas
+d) 17 ovelhas
+e) Nenhuma das opções acima
+
+Resposta: a) 9 ovelhas
+
+Pergunta 3:
+Se 2 gatos pegam 2 ratos em 2 minutos, quantos gatos são necessários para pegar 100 ratos em 100 minutos?
+
+a) 50 gatos
+b) 100 gatos
+c) 2 gatos
+d) 200 gatos
+e) Nenhuma das opções acima
+
+Resposta: c) 2 gatos
+
+Pergunta 4:
+Quantos números de 1 a 100 são divisíveis por 7 e não são múltiplos de 5?
+
+a) 14 números
+b) 16 números
+c) 17 números
+d) 15 números
+e) Nenhuma das opções acima
+
+Resposta: b) 16 números
+
+Pergunta 5:
+Se um avião cai na fronteira entre os Estados Unidos e o Canadá, onde os sobreviventes devem ser enterrados?
+
+a) Estados Unidos
+b) Canadá
+c) Fronteira
+d) Nenhum lugar
+e) Nenhuma das opções acima
+
+Resposta: d) Nenhum lugar (os sobreviventes não devem ser enterrados, pois sobreviveram)
+
+Pergunta 6:
+Um homem constrói uma casa retangular com quatro lados de tamanhos diferentes. Todos os lados têm vista para o sul. Um urso polar passa pela casa. De que cor é o urso polar?
+
+a) Branco
+b) Marrom
+c) Preto
+d) Não é especificado
+e) Nenhuma das opções acima
+
+Resposta: b) Marrom (os ursos polares vivem no Polo Norte, onde não há casas, portanto, é um urso marrom)
+
+Pergunta 7:
+Quantos meses têm 28 dias?
+
+a) 1 mês
+b) 12 meses
+c) 2 meses
+d) 6 meses
+e) Nenhuma das opções acima
+
+Resposta: b) 12 meses (todos os meses têm pelo menos 28 dias)
+
+Pergunta 8:
+Quantas letras "E" existem nesta frase?
+
+"Esse exercício de lógica é excelente para o aprendizado!"
+
+a) 2 letras "E"
+b) 3 letras "E"
+c) 4 letras "E"
+d) 5 letras "E"
+e) Nenhuma das opções acima
+
+Resposta: d) 5 letras "E"
+
+Pergunta 9:
+Qual é o próximo número na sequência?
+
+1, 4, 27, 256, ...
+
+a) 3125
+b) 1024
+c) 46656
+d) 3126
+e) Nenhuma das opções acima
+
+Resposta: a) 3125
+
+Pergunta 10:
+Quantos buracos existem em uma peneira?
+
+a) 0 buracos
+b) 1 buraco
+c) 2 buracos
+d) Nenhum dos buracos acima
+e) Nenhuma das opções acima
+
+Resposta: b) 1 buraco
