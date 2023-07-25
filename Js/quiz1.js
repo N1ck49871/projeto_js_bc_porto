@@ -70,3 +70,37 @@ export const quiz1 = [
         r4: "Nico Robin"
     }
 ];
+
+
+export const respostaCertaQ1 = [
+    {
+        resposta: 'r2'
+    },
+    {
+        resposta: 'r4'
+    },
+    {
+        resposta: 'r4'
+    },
+    {
+        resposta: 'r2'
+    },
+    {
+        resposta: 'r1'
+    },
+    {
+        resposta: 'r4'
+    },
+    {
+        resposta: 'r3'
+    },
+    {
+        resposta: 'r4'
+    },
+    {
+        resposta: 'r2'
+    },
+    {
+        resposta: 'r2'
+    }
+];
