@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --primeira_cor: #272727;
+    --segunda_cor: #323331;
+    --terceira_cor: #373936;
+    --quarta_cor: #3C3E3A;
+    --quinta_cor: #50544C;
+    --sexta_cor: #656A5F;
+    --setima_cor: #798071;
+    --oitava_cor: #F2F3F4;
+}
