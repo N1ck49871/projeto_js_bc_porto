@@ -1,3 +1,5 @@
+// imports de cada Quiz, separado por pergunta
+
 function coletaDadosHome() {
     const nome = document.querySelector("#nome").value
     const tema = document.querySelector("#tema").value
@@ -9,4 +11,4 @@ const enviarDadosHome = document.querySelector("#btn-submit")
 
 enviarDadosHome.addEventListener("click", () => {
     const dados = coletaDadosHome()
-})
+});
