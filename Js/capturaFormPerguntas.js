@@ -4,27 +4,41 @@ import { quiz1 } from "./quiz1.js";
 const temas = [
     quiz1
 ];
+
 function exibePerguntas(quests) {
-    const questao = document.querySelector("#perguntas"); // Usando querySelector em vez de querySelectorAll
-    questao.innerHTML = "";
-    for (let quiz of quests) {
-        questao.innerHTML += `
-            <h3 id="pergunta">${quiz.pergunta}</h3>
+    const questaoContainer = document.querySelector("#perguntas");
+    questaoContainer.innerHTML = ""; // Limpar o conteúdo antigo
 
-            <input type="radio" name="resposta" value="1" required />
-            <label for="resposta">A) ${quiz.r1}</label>
+    for (let i = 0; i < quests.length; i++) {
+        const quiz = quests[i];
 
-            <input type="radio" name="resposta" value="2" required />
-            <label for="resposta">B) ${quiz.r2}</label>
+        // Criar um novo elemento para a pergunta
+        const perguntaElemento = document.createElement("h3");
+        perguntaElemento.id = "pergunta";
+        perguntaElemento.textContent = quiz.pergunta;
 
-            <input type="radio" name="resposta" value="3" required />
-            <label for="resposta">C) ${quiz.r3}</label>
+        // Criar elementos para as opções
+        const opcoesContainer = document.createElement("div");
 
-            <input type="radio" name="resposta" value="4" required />
-            <label for="resposta">D) ${quiz.r4}</label>
-        `;
-    };
-};
+        for (let j = 1; j <= 4; j++) {
+            const opcaoInput = document.createElement("input");
+            opcaoInput.type = "radio";
+            opcaoInput.name = `resposta${i}`;
+            opcaoInput.value = j;
+            opcaoInput.required = true;
+
+            const opcaoLabel = document.createElement("label");
+            opcaoLabel.textContent = `${"ABCD"[j-1]}) ${quiz["r" + j]}`;
+
+            opcoesContainer.appendChild(opcaoInput);
+            opcoesContainer.appendChild(opcaoLabel);
+        }
+
+        // Adicionar pergunta e opções ao container
+        questaoContainer.appendChild(perguntaElemento);
+        questaoContainer.appendChild(opcoesContainer);
+    }
+}
 
 function randomInt(min, max){
     const randomNumber = Math.floor(Math.random() * (max - min + 1) + min)
