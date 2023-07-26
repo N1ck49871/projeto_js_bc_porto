@@ -10,4 +10,15 @@
     --sexta_cor: #bd95a9;
     --setima_cor: #deafc3;
     --oitava_cor: #ffc8dd;
+    --nona_cor: #f2f3f4;
+}
+body {
+    background-color: var(--oitava_cor);
+}
+.btn-init {
+    background-color: var(--quinta_cor);
+    color: var(--nona_cor);
+}
+.btn-init:hover {
+    background-color: var(--sexta_cor);
 }
