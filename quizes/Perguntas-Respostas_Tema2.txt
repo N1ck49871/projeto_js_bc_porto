@@ -76,17 +76,15 @@ e) Nenhuma das opções acima
 Resposta: b) 12 meses (todos os meses têm pelo menos 28 dias)
 
 Pergunta 8:
-Quantas letras "E" existem nesta frase?
+Qual o próximo número na sequência?
+1, 3, 6, 10, ...
 
-"Esse exercício de lógica é excelente para o aprendizado!"
+a) 12
+b) 15
+c) 16
+d) 18
 
-a) 2 letras "E"
-b) 3 letras "E"
-c) 4 letras "E"
-d) 5 letras "E"
-e) Nenhuma das opções acima
-
-Resposta: d) 5 letras "E"
+Resposta: d) 16
 
 Pergunta 9:
 Qual é o próximo número na sequência?
