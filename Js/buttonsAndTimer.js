@@ -1,10 +1,14 @@
-const startBtn = document.querySelector('#start')
+const startBtn = document.querySelector('#btn-submit')
 let [hours, minutes, seconds, milisseconds] = [0, 0, 0, 0]
-let timerDisplay = document.querySelector('#timerDisplay')
 let stopwatchStarted = false
 let stopwatch
 
-startBtn.addEventListener('click', () => {
+function pauseStopwatch(){
+    clearInterval(stopwatch)
+}
+
+function startStopwatch(){
+    let timerDisplay = document.querySelector('#timerDisplay')
     if (!stopwatchStarted){
         stopwatch = setInterval(() => {
             if (milisseconds == 1000){
@@ -24,7 +28,9 @@ startBtn.addEventListener('click', () => {
         }, 10)
         stopwatchStarted = true
     }
-})
+}
+
+startBtn.addEventListener('click', startStopwatch)
 
 //-----//-----//-----//-----//-----//-----//-----//-----//-----//
 
@@ -58,14 +64,14 @@ function changeToLightTheme(){
     changeThemeBtn.removeEventListener('click', changeToLightTheme)
     changeThemeBtn.addEventListener('click', changeToDarkTheme)
     themeBtn.src = 'img/dark-theme.png'
-    linkTheme.href = 'Css/dark.css'
+    linkTheme.href = 'Css/light.css'
 }
 
 function changeToDarkTheme(){
     changeThemeBtn.removeEventListener('click', changeToDarkTheme)
     changeThemeBtn.addEventListener('click', changeToLightTheme)
     themeBtn.src = 'img/light-theme.png'
-    linkTheme.href = 'Css/light.css'
+    linkTheme.href = 'Css/dark.css'
 }
 
 changeToDarkTheme()
