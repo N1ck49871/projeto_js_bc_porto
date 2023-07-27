@@ -1,74 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-Br">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>placeholder</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      crossorigin="anonymous"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+        crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/Css/styles.css" />
     <link rel="stylesheet" href="/Css/dark.css" id="theme" />
-  </head>
+</head>
 
-  <body>
+<body>
     <header>
-      <nav class="navbar navbar-expand-lg">
-        <h1>Quiz</h1>
-        <button id="botao-musica" class="btn">
-          <img
-            id="play-pause-btn"
-            src="./img/play-btn.png"
-            alt="Botão para ligar ou desligar música"
-            width="60px"
-            height="60px"
-          />
-        </button>
+        <nav class="navbar navbar-expand-lg">
+            <h1>Quiz</h1>
+            <audio src="/musica/22 Pandrezz - Cuddlin (Kupla Master).mp3" autoplay loop id="music"></audio>
+            <button id="botao-musica" class="btn">
+                <img
+                id="play-pause-btn"
+                src="./img/play-btn.png"
+                alt="Botão para ligar ou desligar música"
+                width="60px"
+                height="60px"
+                />
+            </button>
 
-        <button id="botao-temas" class="btn">
-          <img
-            src="/img/light-theme.png"
-            id="img-temas"
-            alt="Troca o tema da tela"
-            width="60px"
-            height="60px"
-          />
-        </button>
-      </nav>
+            <button id="botao-temas" class="btn">
+                <img
+                src="/img/light-theme.png"
+                id="img-temas"
+                alt="Troca o tema da tela"
+                width="60px"
+                height="60px"
+                />
+            </button>
+        </nav>
     </header>
     <main class="home">
-      <div class="form-container">
-        <form action="" id="form-home" class="form-init">
-          <h2>Insira seu Nome e o Tema</h2>
-          <label for="nome" class="form-label">NOME:</label>
-          <input
-            id="nome"
-            type="text"
-            name="nome"
-            class="form-control"
-            placeholder="Insira seu nome"
-            required
-          />
-          <label for="tema" class="form-label">TEMA:</label>
-          <select id="tema" name="tema" class="form-select" required>
-            <option value="" selected disabled>Selecione o Tema:</option>
-            <option value="html">HTML</option>
-            <option value="css">CSS</option>
-          </select>
-          <button id="btn-submit" type="submit" class="btn btn-init mt-4">
-            Iniciar Quiz
-          </button>
-        </form>
-      </div>
+        <div class="form-container">
+            <form action="" id="form-home" class="form-init">
+                <h2>Insira seu Nome e o Tema</h2>
+                <label for="nome" class="form-label">NOME:</label>
+                <input
+                id="nome"
+                type="text"
+                name="nome"
+                class="form-control"
+                placeholder="Insira seu nome"
+                required
+            />
+            <label for="tema" class="form-label">TEMA:</label>
+            <select id="tema" name="tema" class="form-select" required>
+                <option value="" selected disabled>Selecione o Tema:</option>
+                <option value="html">ONE PIECE</option>
+                <option value="css">LOGICA</option>
+                <option value="">inserir</option>
+            </select>
+            <button id="btn-submit" type="submit" class="btn btn-init mt-4">
+                Iniciar Quiz
+            </button>
+            </form>
+        </div>
     </main>
     <script src="/Js/script.js"></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      crossorigin="anonymous"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"
     ></script>
-  </body>
+</body>
 </html>
