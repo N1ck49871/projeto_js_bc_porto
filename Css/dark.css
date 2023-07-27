@@ -45,4 +45,36 @@ body {
     background-color: var(--oitava_cor);
 }
 
+.quiz {
+    background-color: var(--quinta_cor);
+    color: var(--oitava_cor);
+}
+
+.pergunta {
+    background-color: var(--segunda_cor);
+   
+}
+
+.alternativas {
+    color: var(--oitava_cor);
+}
+
+.quiz-btn {
+    background-color: var(--segunda_cor);
+    color: white;
+    border: 2px solid var(--setima_cor);
+}
+
+.resultado {
+    color: var(--oitava_cor);
+}
+
+.quiz-btn:hover {
+    background-color: var(--oitava_cor);
+    color: var(--primeira_cor);
+}
+
+
+
+
 

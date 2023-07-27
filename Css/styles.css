@@ -56,3 +56,54 @@ ul, .leaderboard-list{
 .table {
     border-radius: 8px;
 }
+
+.quiz {
+   padding: 23px;
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+}
+
+.resultado {
+   display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-btn {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.pergunta{ 
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.alternativas {
+    padding: 5px;
+    font-size: 22px;
+}
+
+input {
+    margin: 10px;
+}
+
+.resposta-certa {
+    background-color: #40e39f;
+    border-radius: 5px;
+    
+}
+
+.resposta-errada {
+    background-color: #e3494e;
+    border-radius: 5px;
+}
