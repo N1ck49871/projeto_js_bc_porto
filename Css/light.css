@@ -1,0 +1,24 @@
+*{
+  --primeira_cor: #272727;
+  --segunda_cor: #FFE5EC;
+  --terceira_cor: #FFC2D1;
+  --quarta_cor: #FFB3C6;
+  --quinta_cor: #FF8FAB;
+  --sexta_cor: #FB6F92;
+  --setima_cor: #f2f3f4;
+}
+body{
+  background-color: var(--segunda_cor);
+}
+.btn-init {
+  background-color: var(--quinta_cor);
+  color: var(--nona_cor);
+}
+.btn-init:hover {
+  background-color: var(--sexta_cor);
+}
+.form-container{
+  background-color: var(--terceira_cor);
+  color: var(--nona_cor);
+  border: solid 2px var(--primeira_cor);
+}
