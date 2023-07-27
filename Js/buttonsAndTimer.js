@@ -40,14 +40,16 @@ let btn = document.querySelector('#play-pause-btn')
 function playMusic(){
     btn.removeEventListener('click', playMusic)
     btn.addEventListener('click', pauseMusic)
-    btn.src = './img/pause-btn.png'
+    btn.classList.add('bi-pause-fill')
+    btn.classList.remove('bi-play-fill')
     music.play();
 }
 
 function pauseMusic(){
     btn.removeEventListener('click', pauseMusic)
     btn.addEventListener('click', playMusic)
-    btn.src = './img/play-btn.png'
+    btn.classList.add('bi-play-fill')    
+    btn.classList.remove('bi-pause-fill')
     
     music.pause();
 }
@@ -63,14 +65,16 @@ linkTheme = document.querySelector('#theme')
 function changeToLightTheme(){
     changeThemeBtn.removeEventListener('click', changeToLightTheme)
     changeThemeBtn.addEventListener('click', changeToDarkTheme)
-    themeBtn.src = 'img/dark-theme.png'
+    themeBtn.classList.remove('bi-sun-fill')
+    themeBtn.classList.add('bi-moon-stars-fill')
     linkTheme.href = 'Css/light.css'
 }
 
 function changeToDarkTheme(){
     changeThemeBtn.removeEventListener('click', changeToDarkTheme)
     changeThemeBtn.addEventListener('click', changeToLightTheme)
-    themeBtn.src = 'img/light-theme.png'
+    themeBtn.classList.remove('bi-moon-stars-fill')
+    themeBtn.classList.add('bi-sun-fill')
     linkTheme.href = 'Css/dark.css'
 }
 
