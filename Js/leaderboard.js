@@ -65,3 +65,56 @@ function buildLeaderboard(playersList = []){
     }
 }
 
+p1= {
+    name: 'abc',
+    time: '123',
+    date: '123',
+    points: 123,
+    theme: 'quiz'
+}
+p2= {
+    name: 'abc',
+    time: '123',
+    date: '123',
+    points: 123,
+    theme: 'quiz'
+}
+p3= {
+    name: 'abc',
+    time: '123',
+    date: '123',
+    points: 123,
+    theme: 'quiz'
+}
+p4= {
+    name: 'abc',
+    time: '123',
+    date: '123',
+    points: 123,
+    theme: 'quiz'
+}
+p5= {
+    name: 'abc',
+    time: '123',
+    date: '123',
+    points: 123,
+    theme: 'quiz'
+}
+p6= {
+    name: 'abc',
+    time: '123',
+    date: '123',
+    points: 123,
+    theme: 'quiz'
+}
+p7= {
+    name: 'abc',
+    time: '123',
+    date: '123',
+    points: 123,
+    theme: 'quiz'
+}
+
+ps = [p1,p2,p3,p4,p5,p6,p7]
+
+buildLeaderboard(orderLeaderboard(ps))

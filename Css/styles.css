@@ -29,3 +29,16 @@ main .quiz{
     padding: 1% 0;
     align-items: center;
 }
+.leaderboard-ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+ul, .leaderboard-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
