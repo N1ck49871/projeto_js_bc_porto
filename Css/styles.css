@@ -3,17 +3,27 @@
     margin: 0;
     padding: 0;
     --primeira_cor: #272727;
-    --segunda_cor: #e7efc5;
-    --terceira_cor: #d3e3bd;
-    --quarta_cor: #bfd7b5;
-    --quinta_cor: #7a6174;
-    --sexta_cor: #bd95a9;
-    --setima_cor: #deafc3;
-    --oitava_cor: #ffc8dd;
-    --nona_cor: #f2f3f4;
+    --segunda_cor: #FFE5EC;
+    --terceira_cor: #FFC2D1;
+    --quarta_cor: #FFB3C6;
+    --quinta_cor: #FF8FAB;
+    --sexta_cor: #FB6F92;
+    --setima_cor: #f2f3f4;
 }
-body {
-    background-color: var(--oitava_cor);
+body{
+    background-color: var(--segunda_cor);
+}
+main .quiz{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 .btn-init {
     background-color: var(--quinta_cor);
@@ -21,4 +31,20 @@ body {
 }
 .btn-init:hover {
     background-color: var(--sexta_cor);
+}
+.form-container{
+    margin-top: 8%;
+    background-color: var(--terceira_cor);
+    color: var(--nona_cor);
+    width: 50vw;
+    padding: 2%;
+    border: solid 2px var(--primeira_cor);
+    border-radius: 8px ;
+}
+.btn-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1% 0;
+    align-items: center;
 }

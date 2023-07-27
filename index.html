@@ -9,7 +9,7 @@
             rel="stylesheet"
             integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
             crossorigin="anonymous" />
-        <link rel="stylesheet" href="/Css/styles.css" />
+        <link rel="stylesheet" href="/Css/styles.css" id="theme" />
     </head>
 
     <body>
@@ -27,20 +27,18 @@
 
                 <button id="botao-temas" class="btn">
                     <img
-                        src="/img/dark-theme.png"
+                        src="/img/light-theme.png"
+                        id="img-temas"
                         alt="Troca o tema da tela"
                         width="60px"
                         height="60px" />
                 </button>
             </nav>
         </header>
-        <main>
-            <div class="container container-sm">
-                <form action="" id="form-home" class="row g-3">
-                    <h2>
-                        Insira seu nome, escolha o tema e inicie sua diversão
-                        'icon'
-                    </h2>
+        <main class="home">
+            <div class="form-container">
+                <form action="" id="form-home">
+                    <h2>Insira seu Nome e o Tema</h2>
                     <label for="nome" class="form-label">NOME:</label>
                     <input
                         id="nome"
