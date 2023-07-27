@@ -121,6 +121,6 @@ export const respostaCertaQ1 = [
     },
     {
         id: '10',
-        resposta: "Roronoa Zoro"
+        resposta: 'r2'
     }
 ];
