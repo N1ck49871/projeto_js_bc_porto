@@ -2,12 +2,30 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    --primeira_cor: #272727;
-    --segunda_cor: #e7efc5;
-    --terceira_cor: #d3e3bd;
-    --quarta_cor: #bfd7b5;
-    --quinta_cor: #7a6174;
-    --sexta_cor: #bd95a9;
-    --setima_cor: #deafc3;
-    --oitava_cor: #ffc8dd;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+main .quiz{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form-container{
+    margin-top: 8%;
+    width: 50vw;
+    padding: 2%;
+    border-radius: 8px ;
+}
+.btn-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1% 0;
+    align-items: center;
 }
