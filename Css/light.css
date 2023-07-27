@@ -22,3 +22,14 @@ body{
   color: var(--nona_cor);
   border: solid 2px var(--primeira_cor);
 }
+
+.leaderboard-list {
+  background-color: var(--quarta_cor);
+  color: var(--primeira_cor);
+}
+
+.leaderboard-list:hover {
+  background-color: var(--quinta_cor);
+}
+
+

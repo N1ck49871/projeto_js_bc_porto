@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    transition: all 0.2s;
 }
 
 main{
@@ -15,6 +16,10 @@ main .quiz{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+.titulo {
+    padding: 15px;
+    margin: 5px;
 }
 .form-container{
     margin-top: 8%;
@@ -34,6 +39,7 @@ main .quiz{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin: 15px;
 }
 ul, .leaderboard-list{
     display: flex;
@@ -41,4 +47,12 @@ ul, .leaderboard-list{
     justify-content: center;
     align-items: center;
     list-style: none;
+}
+.leaderboard-list {
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.table {
+    border-radius: 8px;
 }
