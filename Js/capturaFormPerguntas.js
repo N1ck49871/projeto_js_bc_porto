@@ -1,9 +1,16 @@
 import { quiz1 } from "./quiz1.js";
-// import { respostaCertaQ1 } from "./quiz1.js";
+import { quiz2 } from "./quiz2.js";
+import { quiz3 } from "./quiz3.js";
+import { respostaCertaQ1 } from "./quiz1.js";
+import { respostaCertaQ2 } from "./quiz2.js";
+import { respostaCertaQ3 } from "./quiz3.js";
 
 const temas = [
-    quiz1
+    quiz1,
+    quiz2,
+    quiz3
 ];
+
 
 function exibePerguntas(quests) {
     const questaoContainer = document.querySelector("#perguntas");
@@ -56,18 +63,48 @@ function listRandomizer (list){
     return listRandomized
 };
 
-function capturaResposta(){
-    const opcoes = document.getElementsByName("resposta");
+let respostasUsuario = []
 
-    for (let i = 0; i < opcoes.length; i++) {
-        if (opcoes[i].checked) {
-            respostaOpcoes = opcoes[i].value
-            return respostaOpcoes;
-        }
+function capturaResposta() {
+    const opcoes = document.querySelectorAll("input[type=radio]:checked");
+    let respostaOpcoes = "";
+
+    if (opcoes.length > 0) {
+        respostaOpcoes = opcoes[0].value;
     }
-};
+
+    // Caso nenhuma opção esteja selecionada, retorne uma string vazia
+    return respostaOpcoes;
+}
+
+const enviarResposta = document.getElementById("btn-question");
+enviarResposta.addEventListener("click", function() {
+    const respostaSelecionada = capturaResposta();
+    if (respostaSelecionada !== "") {
+        const perguntaAtual = {
+            pergunta: perguntasRandom[respostasUsuario.length].pergunta,
+            resposta: respostaSelecionada
+        };
+
+        respostasUsuario.push(perguntaAtual);
+        console.log("Resposta selecionada:", respostaSelecionada);
+        mostrarRespostas()
+    } else {
+        console.log("Nenhuma resposta selecionada.");
+    }
+});
+
+function mostrarRespostas() {
+    console.log("Respostas do usuário:" + respostasUsuario);
+
+    for (let i = 0; i < respostasUsuario.length; i++) {
+        console.log(`Pergunta: ${respostasUsuario[i].pergunta}`);
+        console.log(`Resposta: ${respostasUsuario[i].resposta}`);
+        console.log("-----------------------");
+    }
+}
 
 let perguntasRandom = listRandomizer(temas[0])
 exibePerguntas(perguntasRandom);
-console.log(capturaResposta());
+
 // console.log(perguntasRandom);
