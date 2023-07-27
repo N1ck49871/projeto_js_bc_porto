@@ -10,4 +10,31 @@
     --sexta_cor: #656A5F;
     --setima_cor: #798071;
     --oitava_cor: #F2F3F4;
+
 }
+
+header, h1 {
+    color: white !important;
+}
+
+body {
+    background-color: var(--primeira_cor);
+}
+
+.form-container {
+    background-color: var(--terceira_cor);
+    color: var(--oitava_cor);
+}
+
+.btn-init {
+    background-color: var(--quinta_cor);
+    color: white;
+    border: 2px solid var(--setima_cor);
+}
+
+.btn-init:hover {
+    background-color: var(--setima_cor);
+}
+
+
+
