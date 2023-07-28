@@ -1,66 +1,43 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz Squad5</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Squad-5</title>
+
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
         rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
         crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./Css/styles.css" />
-    <link rel="stylesheet" href="./Css/dark.css" id="theme" />
-</head>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./Css/new-styles.css" />
+    <link rel="stylesheet" href="./Css/new-dark.css" id="theme" />
+</head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
-            <h1>Quiz <i class="bi bi-dice-4"></i></h1>
-            <audio src="./musica/22 Pandrezz - Cuddlin (Kupla Master).mp3" loop id="music"></audio>
-            <button id="botao-musica" class="btn">
-                <i class="bi bi-play-fill" id="play-pause-btn"></i> <!-- class="bi bi-pause-fill -->
-            </button>
-
-            <button id="botao-temas" class="btn">
-                <i class="bi bi-sun-fill" id="img-temas"></i> <!-- class="bi bi-moon-stars-fill" -->
-            </button>
-        </nav>
+        <h1 class="header-title">Quiz <i class="bi bi-dice-5"></i></h1>
+        <audio src="./musica/22 Pandrezz - Cuddlin (Kupla Master).mp3" loop id="music"></audio>
     </header>
-    <main class="home">
-        <div class="form-container">
-            <form action="" id="form-home" class="form-init">
-                <h2>Insira seu Nome e Escolha o Tema:</h2>
-                <label for="nome" class="form-label">NOME:</label>
-                <input
-                id="nome"
-                type="text"
-                name="nome"
-                class="form-control"
-                placeholder="Insira seu nome"
-                required
-            />
-            <label for="tema" class="form-label">TEMA:</label>
-            <select id="tema" name="tema" class="form-select" required>
-                <option value="" selected disabled>Selecione o Tema:</option>
-                <option value="logica">LOGICA</option>
-                <option value="one-piece">ONE PIECE</option>
-                <option value="logo">LOGOS</option>
-            </select>
-        </form>
-        <button id="btn-submit" type="submit" class="btn btn-init mt-4">
-            Iniciar Quiz
-        </button>
-        </div>
+    <section>
+        <div hidden id="timer-container" class="timer"><span id="timerDisplay"></span></div>
+    </section>
+    <main>
     </main>
-    <script src="./Js/script.js"></script>
-    <script src="./Js/buttonsAndTimer.js"></script>
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"
-    ></script>
+    <footer>
+        <div class="footer-btn tema-btn">
+            <button id="botao-temas" class="borderless">
+                <img src="./img/sun-flat.png" alt="Troca tema" id="img-temas" class="footer-img">
+            </button>
+        </div>
+        <div class="footer-btn musica-btn">
+            <button id="botao-musica" class="borderless">
+                <img src="./img/playBtn.png" alt="Tocar/Parar música" id="play-pause-btn" class="footer-img">
+            </button>
+        </div>
+        <script src="./Js/newScript.js" type="module"></script>
+    </footer>
 </body>
 </html>
