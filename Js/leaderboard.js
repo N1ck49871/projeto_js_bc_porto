@@ -1,35 +1,33 @@
-
-
-function orderLeaderboard(playersList = []){
+function orderLeaderboard(playersList = []) {
     const playersMapped = [playersList.shift()]
-    for (let i = 0; i < playersList.length; i++){
+    for (let i = 0; i < playersList.length; i++) {
         const player = playersList[i]
-        for (let j = 0; j < playersMapped.length; j++){
-            if (j == playersMapped.length - 1){
-                if (player.points > playersMapped[j].points){
+        for (let j = 0; j < playersMapped.length; j++) {
+            if (j == playersMapped.length - 1) {
+                if (player.points > playersMapped[j].points) {
                     playersMapped.splice(j, 0, player)
                     break
                 }
-                if (player.points < playersMapped[j].points){
-                    playersMapped.splice(j+1, 0, player)
+                if (player.points < playersMapped[j].points) {
+                    playersMapped.splice(j + 1, 0, player)
                     break
                 }
                 if (player.time < playersMapped[j].time) {
-                    playersMapped.splice(j+1, 0, player)
+                    playersMapped.splice(j + 1, 0, player)
                     break
                 }
-                playersMapped.splice(j+1, 0, player)
+                playersMapped.splice(j + 1, 0, player)
                 break
             }
-            if (player.points < playersMapped[j].points){
+            if (player.points < playersMapped[j].points) {
                 continue
             }
-            if (player.points == playersMapped[j].points){
+            if (player.points == playersMapped[j].points) {
                 if (player.time < playersMapped[j].time) {
                     playersMapped.splice(j, 0, player)
                     break
                 }
-                playersMapped.splice(j+1, 0, player)
+                playersMapped.splice(j + 1, 0, player)
                 break
             }
             playersMapped.splice(j, 0, player)
@@ -39,21 +37,21 @@ function orderLeaderboard(playersList = []){
     return playersMapped
 }
 
-function buildLeaderboard(playersList = []){
-    let board = document.querySelector('#leaderboardBody')
-    board.innerHTML= ''
-    for (let i = 0; i < playersList.length; i++){
+function buildLeaderboard(playersList = []) {
+    let board = document.querySelector("#leaderboardBody")
+    board.innerHTML = ""
+    for (let i = 0; i < playersList.length; i++) {
         player = playersList[i]
-        const boardRow = document.createElement('tr')
-        const pName = document.createElement('td')
+        const boardRow = document.createElement("tr")
+        const pName = document.createElement("td")
         pName.textContent = player.name
-        const pTheme = document.createElement('td')
+        const pTheme = document.createElement("td")
         pTheme.textContent = player.theme
-        const pTime = document.createElement('td')
+        const pTime = document.createElement("td")
         pTime.textContent = player.time
-        const pDate = document.createElement('td')
+        const pDate = document.createElement("td")
         pDate.textContent = player.date
-        const pPoints = document.createElement('td')
+        const pPoints = document.createElement("td")
         pPoints.textContent = player.points
 
         boardRow.appendChild(pName)
@@ -65,56 +63,56 @@ function buildLeaderboard(playersList = []){
     }
 }
 
-p1= {
-    name: 'abc',
-    time: '123',
-    date: '123',
+p1 = {
+    name: "abc",
+    time: "123",
+    date: "123",
     points: 123,
-    theme: 'quiz'
+    theme: "quiz",
 }
-p2= {
-    name: 'abc',
-    time: '123',
-    date: '123',
+p2 = {
+    name: "abc",
+    time: "123",
+    date: "123",
     points: 123,
-    theme: 'quiz'
+    theme: "quiz",
 }
-p3= {
-    name: 'abc',
-    time: '123',
-    date: '123',
+p3 = {
+    name: "abc",
+    time: "123",
+    date: "123",
     points: 123,
-    theme: 'quiz'
+    theme: "quiz",
 }
-p4= {
-    name: 'abc',
-    time: '123',
-    date: '123',
+p4 = {
+    name: "abc",
+    time: "123",
+    date: "123",
     points: 123,
-    theme: 'quiz'
+    theme: "quiz",
 }
-p5= {
-    name: 'abc',
-    time: '123',
-    date: '123',
+p5 = {
+    name: "abc",
+    time: "123",
+    date: "123",
     points: 123,
-    theme: 'quiz'
+    theme: "quiz",
 }
-p6= {
-    name: 'abc',
-    time: '123',
-    date: '123',
+p6 = {
+    name: "abc",
+    time: "123",
+    date: "123",
     points: 123,
-    theme: 'quiz'
+    theme: "quiz",
 }
-p7= {
-    name: 'abc',
-    time: '123',
-    date: '123',
+p7 = {
+    name: "abc",
+    time: "123",
+    date: "123",
     points: 123,
-    theme: 'quiz'
+    theme: "quiz",
 }
 
-ps = [p1,p2,p3,p4,p5,p6,p7]
+ps = [p1, p2, p3, p4, p5, p6, p7]
 
 buildLeaderboard(orderLeaderboard(ps))

@@ -1,7 +1,7 @@
 :root {
     --cor-principal: #272727;
     --cor-secundaria: #4a4a4a;
-    --cor-texto: #F2F3F4;
+    --cor-texto: #f2f3f4;
     --cor-destaque: #ffffff;
     --cor-sucesso: #1eff0034;
     --cor-falha: #ff000066;
@@ -12,25 +12,20 @@
     border: 2px solid var(--cor-secundaria);
 }
 
-.borderless {
-    background-color: var(--cor-principal);
-}
-
 body {
     color: var(--cor-texto);
     background-color: var(--cor-principal);
 }
 
 .form-container {
-    border: 5px solid var(--cor-secundaria)
+    border: 5px solid var(--cor-secundaria);
 }
 
 .input-box {
-    border: 2px solid var(--cor-secundaria)
+    border: 2px solid var(--cor-secundaria);
 }
 
 .btn:hover {
-    background-color: var(--cor-secundaria);
     border: 2px solid var(--cor-destaque);
 }
 
@@ -51,10 +46,6 @@ body {
     background-color: var(--cor-secundaria);
 }
 
-.quiz-list-item {
-    font-size: 30px;
-}
-
 .medias-container {
     border: 5px solid var(--cor-secundaria);
 }
@@ -67,10 +58,12 @@ body {
     color: var(--cor-falha);
 }
 
-.sucesso, .btn-send:hover {
+.sucesso,
+.btn-send:hover {
     background-color: var(--cor-sucesso);
 }
 
-.falha, .btn-reset:hover {
+.falha,
+.btn-reset:hover {
     background-color: var(--cor-falha);
 }
