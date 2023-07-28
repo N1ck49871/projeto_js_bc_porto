@@ -1,0 +1,52 @@
+:root {
+    --cor-secundaria: #FB6F92;
+    --cor-principal: #FFE5EC;
+    --cor-texto: #272727;
+    --cor-destaque: #0c0c0c;
+    --cor-sucesso: #1eff0034;
+    --cor-falha: #ff000066;
+}
+
+.btn {
+    color: var(--cor-texto);
+    border: 2px solid var(--cor-secundaria);
+}
+
+.borderless {
+    background-color: var(--cor-principal);
+}
+
+body {
+    color: var(--cor-texto);
+    background-color: var(--cor-principal);
+}
+
+.form-container {
+    border: 5px solid var(--cor-secundaria)
+}
+
+.input-box {
+    border: 2px solid var(--cor-secundaria)
+}
+
+.btn:hover {
+    background-color: var(--cor-secundaria);
+    border: 2px solid var(--cor-destaque);
+}
+
+.question-container {
+    border: 3px solid var(--cor-secundaria);
+}
+
+.timer {
+    background-color: var(--cor-principal);
+    border: 3px solid var(--cor-secundaria);
+}
+
+.sucesso, .btn-send:hover {
+    background-color: var(--cor-sucesso);
+}
+
+.falha, .btn-reset:hover {
+    background-color: var(--cor-falha);
+}
