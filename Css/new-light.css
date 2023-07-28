@@ -1,6 +1,6 @@
 :root {
-    --cor-secundaria: #FB6F92;
     --cor-principal: #FFE5EC;
+    --cor-secundaria: #FB6F92;
     --cor-texto: #272727;
     --cor-destaque: #0c0c0c;
     --cor-sucesso: #1eff0034;
@@ -41,6 +41,18 @@ body {
 .timer {
     background-color: var(--cor-principal);
     border: 3px solid var(--cor-secundaria);
+}
+
+.main-table-container {
+    background-color: var(--cor-secundaria);
+}
+
+.leaderboard-secundaria {
+    background-color: var(--cor-secundaria);
+}
+
+.quiz-list-item {
+    font-size: 30px;
 }
 
 .sucesso, .btn-send:hover {
