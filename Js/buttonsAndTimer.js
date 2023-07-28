@@ -67,7 +67,7 @@ function changeToLightTheme(){
     changeThemeBtn.addEventListener('click', changeToDarkTheme)
     themeBtn.classList.remove('bi-sun-fill')
     themeBtn.classList.add('bi-moon-stars-fill')
-    linkTheme.href = 'Css/light.css'
+    linkTheme.href = './Css/light.css'
 }
 
 function changeToDarkTheme(){
@@ -75,7 +75,7 @@ function changeToDarkTheme(){
     changeThemeBtn.addEventListener('click', changeToLightTheme)
     themeBtn.classList.remove('bi-moon-stars-fill')
     themeBtn.classList.add('bi-sun-fill')
-    linkTheme.href = 'Css/dark.css'
+    linkTheme.href = './Css/dark.css'
 }
 
 changeToDarkTheme()
