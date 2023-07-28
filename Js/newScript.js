@@ -179,7 +179,7 @@ import { quiz3 } from "./quiz3.js";
 const quizes ={
     'one-piece': quiz1,
     'logica': quiz2,
-    'logotipo': quiz3
+    'fatos': quiz3
 }
 const quizTitle = {
     'one-piece': 'One Piece',
