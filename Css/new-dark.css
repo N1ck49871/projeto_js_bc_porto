@@ -43,6 +43,30 @@ body {
     border: 3px solid var(--cor-secundaria);
 }
 
+.main-table-container {
+    background-color: var(--cor-secundaria);
+}
+
+.leaderboard-secundaria {
+    background-color: var(--cor-secundaria);
+}
+
+.quiz-list-item {
+    font-size: 30px;
+}
+
+.medias-container {
+    border: 5px solid var(--cor-secundaria);
+}
+
+.media-acerto {
+    color: var(--cor-sucesso);
+}
+
+.media-erro {
+    color: var(--cor-falha);
+}
+
 .sucesso, .btn-send:hover {
     background-color: var(--cor-sucesso);
 }

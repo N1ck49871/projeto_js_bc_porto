@@ -86,6 +86,10 @@ footer {
     width: 75px;
 }
 
+.quiz-title-container {
+    display: flex;
+    justify-content: center;
+}
 
 .question-container {
     width: 70vw;
@@ -141,4 +145,62 @@ footer {
 
     display: flex;
     justify-content: space-between;
+}
+
+.main-table-container {
+    padding: 45px;
+    margin: 20px;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+table {
+    width: 80vw;
+
+    font-size: 30px;
+}
+
+tr {
+    height: 20px;
+}
+
+th {
+    width: 20%;
+}
+
+.all-leaderboards-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.leaderboard-secundaria-container {
+    display: flex;
+    justify-content: center;
+}
+
+.leaderboard-secundaria {
+    margin: 15px;
+    padding: 20px;
+
+    border-radius: 15px;
+}
+
+.medias-container {
+    margin: 10px;
+    padding: 10px;
+
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    min-width: 50vw;
+}
+
+.span-medias {
+    font-size: 35px;
 }
