@@ -1,0 +1,76 @@
+:root {
+    --cor-principal: #272727;
+    --cor-secundaria: #4a4a4a;
+    --cor-texto: #F2F3F4;
+    --cor-destaque: #ffffff;
+    --cor-sucesso: #1eff0034;
+    --cor-falha: #ff000066;
+}
+
+.btn {
+    color: var(--cor-texto);
+    border: 2px solid var(--cor-secundaria);
+}
+
+.borderless {
+    background-color: var(--cor-principal);
+}
+
+body {
+    color: var(--cor-texto);
+    background-color: var(--cor-principal);
+}
+
+.form-container {
+    border: 5px solid var(--cor-secundaria)
+}
+
+.input-box {
+    border: 2px solid var(--cor-secundaria)
+}
+
+.btn:hover {
+    background-color: var(--cor-secundaria);
+    border: 2px solid var(--cor-destaque);
+}
+
+.question-container {
+    border: 3px solid var(--cor-secundaria);
+}
+
+.timer {
+    background-color: var(--cor-principal);
+    border: 3px solid var(--cor-secundaria);
+}
+
+.main-table-container {
+    background-color: var(--cor-secundaria);
+}
+
+.leaderboard-secundaria {
+    background-color: var(--cor-secundaria);
+}
+
+.quiz-list-item {
+    font-size: 30px;
+}
+
+.medias-container {
+    border: 5px solid var(--cor-secundaria);
+}
+
+.media-acerto {
+    color: var(--cor-sucesso);
+}
+
+.media-erro {
+    color: var(--cor-falha);
+}
+
+.sucesso, .btn-send:hover {
+    background-color: var(--cor-sucesso);
+}
+
+.falha, .btn-reset:hover {
+    background-color: var(--cor-falha);
+}
