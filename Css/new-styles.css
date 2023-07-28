@@ -98,17 +98,22 @@ footer {
     flex-direction: column;
 }
 
-.input-answer {
+.input-answer-container {
     padding: 5px;
     margin: 10px;
 }
 
-.input-answer > input {
+.div-answer {
+    display: flex;
+}
+
+.div-answer > input {
     margin: 0 5px;
 }
 
-.input-answer > label {
+.div-answer label {
     margin-right: 15px;
+    font-size: 25px;
 }
 
 .input-label {
@@ -136,8 +141,4 @@ footer {
 
     display: flex;
     justify-content: space-between;
-}
-
-.label-input {
-    font-size: 25px;
 }

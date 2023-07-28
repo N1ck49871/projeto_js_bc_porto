@@ -1,13 +1,11 @@
+import { quiz1 } from "./quiz1.js";
+import { quiz2 } from "./quiz2.js";
+import { quiz3 } from "./quiz3.js";
 
-
-import { gabarito1 } from "./quiz1.js";
-import { gabarito2 } from "./quiz2.js";
-import { gabarito3 } from "./quiz3.js";
-
-const gabaritos = {
-    'one-piece': gabarito1,
-    'logica': gabarito2,
-    'logotipo': gabarito3
+const quizes ={
+    'one-piece': quiz1,
+    'logica': quiz2,
+    'logotipo': quiz3
 }
 
 function evaluateQuiz(){
@@ -17,7 +15,7 @@ function evaluateQuiz(){
         return
     }
     let divs = document.querySelectorAll('.question-container')
-    const gabarito = gabaritos[dados.tema]
+    const gabarito = quizes[dados.tema]
     console.log(inputsSelected)
     pauseStopwatch()
     let inputs = document.querySelectorAll('input')
@@ -94,16 +92,6 @@ function startStopwatch(){
 
 //-----//-----//-----//-----//-----//-----//-----//-----//-----//
 
-import { quiz1 } from "./quiz1.js";
-import { quiz2 } from "./quiz2.js";
-import { quiz3 } from "./quiz3.js";
-
-const quizes ={
-    'one-piece': quiz1,
-    'logica': quiz2,
-    'logotipo': quiz3
-}
-
 function randomInt(min, max){
     const randomNumber = Math.floor(Math.random() * (max - min + 1) + min)
     return randomNumber
@@ -138,7 +126,7 @@ function buildQuiz(){
         h3.classList.add('title-question')
         h3.textContent = quizRandom[i].pergunta
         let divInput = document.createElement('div')
-        divInput.classList.add('input-answer')
+        divInput.classList.add('input-answer-container')
         let respostas = [
             {value: 'a', text: quizRandom[i].alternativas.a},
             {value: 'b', text: quizRandom[i].alternativas.b},
@@ -147,7 +135,9 @@ function buildQuiz(){
         ]
         const respostasRandom = listRandomizer(respostas)
         for(let j = 0; j < respostasRandom.length; j++){
-            divInput.innerHTML += `<input class="input-text" required type="radio" name="${i}" id="${j}${i}" value="${respostasRandom[j].value}" data-qid="${quizRandom[i].id}"></input><label for="${j}${i}" class="label-input">${respostasRandom[j].text}</label>`
+            divInput.innerHTML += `<div class="div-answer">
+                <input class="input-text" required type="radio" name="${i}" id="${j}${i}" value="${respostasRandom[j].value}" data-qid="${quizRandom[i].id}"></input><label for="${j}${i}" class="label-input">${respostasRandom[j].text}</label>
+            </div>`
         }
         qContainer.appendChild(h3)
         qContainer.appendChild(divInput)
@@ -212,7 +202,6 @@ changeToDarkTheme()
 //-----//-----//-----//-----//-----//-----//-----//-----//-----//
 
 function buildIndex(){
-    console.log(1)
     let main = document.querySelector('main')
     main.innerHTML = `
         <div class="form-container">
