@@ -9,6 +9,7 @@ function coletaDadosHome() {
 
 const enviarDadosHome = document.querySelector("#btn-submit")
 
+let dados
 enviarDadosHome.addEventListener("click", () => {
-    const dados = coletaDadosHome()
-});
+    dados = coletaDadosHome()
+})

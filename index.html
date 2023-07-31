@@ -1,35 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>placeholder</title>
-        <link rel="stylesheet" href="/Css/styles.css" />
+        <title>Quiz Squad-5</title>
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            crossorigin="anonymous" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+        <link rel="stylesheet" href="./Css/new-styles.css" />
+        <link rel="stylesheet" href="./Css/new-dark.css" id="theme" />
     </head>
-
     <body>
-        <form action="" id="form-home">
-            <h1>placheholder</h1>
-            <h2>
-                Insira seu nome, escolha o tema e inicie sua diversão 'icon'
-            </h2>
-            <label for="nome">NOME:</label>
-            <input
-                id="nome"
-                type="text"
-                name="nome"
-                placeholder="Nome"
-                required />
-            <label for="tema">TEMA:</label>
-            <select id="tema" name="tema" id="tema" required>
-                <option value="" selected disabled>Selecione o Tema:</option>
-                <option value="html">HTML</option>
-                <option value="css">CSS</option>
-            </select>
-
-            <button id="btn-submit" type="submit">Iniciar Quiz</button>
-        </form>
-
-        <script src="/Js/script.js"></script>
+        <header>
+            <h1 class="header-title">Quiz <i class="bi bi-dice-5"></i></h1>
+            <audio
+                src="./musica/22 Pandrezz - Cuddlin (Kupla Master).mp3"
+                loop
+                id="music"></audio>
+        </header>
+        <section>
+            <div hidden id="timer-container" class="timer">
+                <span id="timerDisplay"></span>
+            </div>
+        </section>
+        <main></main>
+        <footer>
+            <div class="footer-btn tema-btn">
+                <button id="botao-temas" class="borderless">
+                    <img
+                        src="./img/sun-flat.png"
+                        alt="Troca tema"
+                        id="img-temas"
+                        class="footer-img" />
+                </button>
+            </div>
+            <div class="footer-btn musica-btn">
+                <button id="botao-musica" class="borderless">
+                    <img
+                        src="./img/playBtn.png"
+                        alt="Tocar/Parar música"
+                        id="play-pause-btn"
+                        class="footer-img" />
+                </button>
+            </div>
+            <script src="./Js/newScript.js" type="module"></script>
+        </footer>
     </body>
 </html>
