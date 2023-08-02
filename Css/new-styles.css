@@ -82,6 +82,7 @@ footer {
 .footer-img {
     height: 50px;
     width: 50px;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .footer-img:hover {
@@ -153,7 +154,8 @@ footer {
     padding: 45px;
     margin: 20px;
     border-radius: 15px;
-
+    align-items: center;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -187,6 +189,7 @@ th {
 .leaderboard-secundaria-container {
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .leaderboard-secundaria {
@@ -199,9 +202,8 @@ th {
 .medias-container {
     margin: 10px;
     padding: 10px;
-
     border-radius: 10px;
-
+    text-align: center;
     display: flex;
     justify-content: space-between;
     min-width: 50vw;
@@ -257,8 +259,6 @@ th {
     }
     .main-table-container {
         width: 90vw;
-        align-items: center;
-        text-align: center;
         padding: 2% 0;
     }
     .main-table {
@@ -268,14 +268,12 @@ th {
     }
     .medias-container {
         width: 90vw;
-        text-align: center;
     }
     .span-medias {
         font-size: 16px;
     }
     .leaderboard-secundaria-container {
         flex-direction: column;
-        text-align: center;
     }
     .quiz-list-item {
         font-size: 16px;
