@@ -2,13 +2,42 @@ let dados
 
 //-----//-----//-----//-----//-----//-----//-----//-----//-----//
 const p1 = {
-    name: "abc",
-    time: "123",
-    date: "123",
-    points: 10,
-    theme: "quiz",
-}
-const players = [p1]
+    name: 'Cristian Negrini',
+    time: '0:25:300',
+    date: '15/7/2023 12:00',
+    points: 5,
+    theme: 'LÓGICA'
+};
+const p2 = {
+    name: 'Vitor Jimenez',
+    time: '0:30:505',
+    date: '10/7/2023 15:00',
+    points: 8,
+    theme: 'ONE PIECE'
+};
+const p3 = {
+    name: 'Nicolas Alves',
+    time: '0:45:200',
+    date: '25/7/2023 18:30',
+    points: 6,
+    theme: 'LÓGICA'
+};
+const p4 = {
+    name: 'Sky Alarcon',
+    time: '0:15:105',
+    date: '5/7/2023 20:15',
+    points: 9,
+    theme: 'FATOS HISTÓRICOS'
+};
+const p5 = {
+    name: 'Ryan Maciel',
+    time: '0:10:400',
+    date: '8/7/2023 14:45',
+    points: 5,
+    theme: 'ONE PIECE'
+};
+
+const players = [p1, p2, p3, p4, p5]
 
 function orderLeaderboard(playersList = []) {
     const copyPlayers = [...playersList]
@@ -135,11 +164,10 @@ function buildLeaderboard() {
     const logica = []
     const fatosHistoricos = []
     let pontuacaoTotal = 0
-    for (let i = 0; i < players.length; i++) {
-        if (players[i].theme == "One Piece") onePiece.push(players[i])
-        if (players[i].theme == "Fatos Históricos")
-            fatosHistoricos.push(players[i])
-        if (players[i].theme == "Lógica") logica.push(players[i])
+    for (let i = 0; i < players.length; i++){
+        if (players[i].theme == 'ONE PIECE') onePiece.push(players[i])
+        if (players[i].theme == 'FATOS HISTÓRICOS') fatosHistoricos.push(players[i])
+        if (players[i].theme == 'LÓGICA') logica.push(players[i])
         pontuacaoTotal += players[i].points
     }
     let mediaAcerto = document.querySelector("#media-acerto")
@@ -181,9 +209,9 @@ const quizes = {
     fatos: quiz3,
 }
 const quizTitle = {
-    "one-piece": "One Piece",
-    logica: "Lógica",
-    fatos: "Fatos Históricos",
+    'one-piece': 'ONE PIECE',
+    'logica': 'LÓGICA',
+    'fatos': 'FATOS HISTÓRICOS'
 }
 
 function evaluateQuiz() {
@@ -267,9 +295,11 @@ function startStopwatch() {
                 if (seconds == 59) {
                     seconds = 0
                     minutes += 1
-                } else seconds += 1
-            } else milisseconds += 10
-            timerDisplay.innerHTML = `${minutes} : ${seconds} : ${milisseconds}`
+                }
+                else seconds += 1
+            }
+            else milisseconds += 10
+            timerDisplay.innerHTML = `${minutes}:${seconds}:${milisseconds}`
         }, 10)
         stopwatchStarted = true
     }
