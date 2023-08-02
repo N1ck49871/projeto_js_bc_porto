@@ -46,6 +46,10 @@ body {
     background-color: var(--cor-secundaria);
 }
 
+.medias-container {
+    border: 5px solid var(--cor-secundaria);
+}
+
 .sucesso,
 .btn-send:hover {
     background-color: var(--cor-sucesso);
